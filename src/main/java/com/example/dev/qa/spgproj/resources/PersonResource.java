@@ -34,13 +34,6 @@ public class PersonResource {
 		this.personRepository = personRepository;
 	}
 
-	@ApiOperation("Cadastra pessoas, uma por vez...")
-	@PostMapping
-	public ResponseEntity<Person> save(@RequestBody Person person) {
-		personRepository.save(person);
-		return new ResponseEntity<>(person, HttpStatus.OK);
-	}
-
 	@ApiOperation("Consulta pessoas, retornando toda a lista")
 	@GetMapping
 	public ResponseEntity<List<Person>> getAll() {
@@ -52,9 +45,9 @@ public class PersonResource {
 	@ApiOperation("Consulta pessoa por ID")
 	@GetMapping(path = "/{id}")
 	public ResponseEntity<Optional<Person>> getById(@PathVariable Integer id) {
-
+		//
 		Optional<Person> optlPerson;
-
+		//
 		try {
 			optlPerson = personRepository.findById(id);
 			return new ResponseEntity<Optional<Person>>(optlPerson, HttpStatus.OK);
@@ -63,16 +56,11 @@ public class PersonResource {
 		}
 	}
 
-	@ApiOperation("Exclui pessoa por ID")
-	@DeleteMapping(path = "/{id}")
-	public ResponseEntity<Optional<Person>> deleteById(@PathVariable Integer id) {
-
-		try {
-			personRepository.deleteById(id);
-			return new ResponseEntity<Optional<Person>>(HttpStatus.OK);
-		} catch (NoSuchElementException nseex) {
-			return new ResponseEntity<Optional<Person>>(HttpStatus.NOT_FOUND);
-		}
+	@ApiOperation("Cadastra pessoas, uma por vez...")
+	@PostMapping
+	public ResponseEntity<Person> save(@RequestBody Person person) {
+		personRepository.save(person);
+		return new ResponseEntity<>(person, HttpStatus.OK);
 	}
 
 	@ApiOperation("Atualiza os dados de uma pessoa")
@@ -84,5 +72,16 @@ public class PersonResource {
 			Person personUpdated = personRepository.save(person);
 			return ResponseEntity.ok().body(personUpdated);
 		}).orElse(ResponseEntity.notFound().build());
+	}
+
+	@ApiOperation("Exclui pessoa por ID")
+	@DeleteMapping(path = "/{id}")
+	public ResponseEntity<Optional<Person>> deleteById(@PathVariable Integer id) {
+		try {
+			personRepository.deleteById(id);
+			return new ResponseEntity<Optional<Person>>(HttpStatus.OK);
+		} catch (NoSuchElementException nseex) {
+			return new ResponseEntity<Optional<Person>>(HttpStatus.NOT_FOUND);
+		}
 	}
 }

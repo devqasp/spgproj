@@ -3,26 +3,26 @@ package com.example.dev.qa.spgproj.models;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+import io.swagger.annotations.ApiModelProperty;
+
 @Entity
-public class Person {
+public class MyPerson {
 
-	public Person() {
-	}
-
-	public Person(String name, String age) {
-	}
-
-	@GeneratedValue
+	@ApiModelProperty(value = "Person Code")
 	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int id;
 
-	@Column(name = "name")
+	@ApiModelProperty(value = "Person Name")
+	@Column(nullable = false)
 	private String name;
 
-	@Column(name = "age")
-	private int age;
+	@ApiModelProperty(value = "Person Age")
+	@Column(nullable = false)
+	private String age;
 
 	public int getId() {
 		return id;
@@ -40,15 +40,11 @@ public class Person {
 		this.name = name;
 	}
 
-	public int getAge() {
+	public String getAge() {
 		return age;
 	}
 
-	public void setAge(int age) {
+	public void setAge(String age) {
 		this.age = age;
-	}
-
-	public String toString() {
-		return "";
 	}
 }
