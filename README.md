@@ -1,6 +1,6 @@
 # Springboot Demo App NPML
 
-[![Build Status](https://img.shields.io/badge/java-api-red)]
+[![Platform](https://img.shields.io/badge/java-api-red)]
 [![License](http://img.shields.io/:license-apache-blue.svg)](http://www.apache.org/licenses/LICENSE-2.0.html)
 
 Pequeno Projeto [Spring Boot](http://projects.spring.io/spring-boot/) de uma API sem autenticação e com autenticação simples usando JWT(JSON WEB TOKEN).
