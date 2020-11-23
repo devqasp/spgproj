@@ -1,10 +1,9 @@
 # Springboot Demo App NPML
 
-[![Build Status](https://travis-ci.org/codecentric/springboot-sample-app.svg?branch=master)](https://travis-ci.org/codecentric/springboot-sample-app)
-[![Coverage Status](https://coveralls.io/repos/github/codecentric/springboot-sample-app/badge.svg?branch=master)](https://coveralls.io/github/codecentric/springboot-sample-app?branch=master)
+[![Build Status](https://img.shields.io/badge/java-api-red)]
 [![License](http://img.shields.io/:license-apache-blue.svg)](http://www.apache.org/licenses/LICENSE-2.0.html)
 
-Minimal [Spring Boot](http://projects.spring.io/spring-boot/) sample app.
+Pequeno Projeto [Spring Boot](http://projects.spring.io/spring-boot/) de uma API sem autenticação e com autenticação simples usando JWT(JSON WEB TOKEN).
 
 ## Requirements
 
