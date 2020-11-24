@@ -1,0 +1,14 @@
+/home/zup/Projects/Java/spgproj/src/main/java/com/example/dev/qa/spgproj/models/MyPerson.java
+/home/zup/Projects/Java/spgproj/src/main/java/com/example/dev/qa/spgproj/resources/MyPersonResource.java
+/home/zup/Projects/Java/spgproj/src/main/java/com/example/dev/qa/spgproj/security/JWTAuthenticationFilter.java
+/home/zup/Projects/Java/spgproj/src/main/java/com/example/dev/qa/spgproj/models/User.java
+/home/zup/Projects/Java/spgproj/src/main/java/com/example/dev/qa/spgproj/resources/PersonResource.java
+/home/zup/Projects/Java/spgproj/src/main/java/com/example/dev/qa/spgproj/repositories/PersonRepository.java
+/home/zup/Projects/Java/spgproj/src/main/java/com/example/dev/qa/spgproj/models/Person.java
+/home/zup/Projects/Java/spgproj/src/main/java/com/example/dev/qa/spgproj/security/WebSecurityConfig.java
+/home/zup/Projects/Java/spgproj/src/main/java/com/example/dev/qa/spgproj/repositories/MyPersonRepository.java
+/home/zup/Projects/Java/spgproj/src/main/java/com/example/dev/qa/spgproj/resources/HomeResource.java
+/home/zup/Projects/Java/spgproj/src/main/java/com/example/dev/qa/spgproj/security/TokenAuthenticationService.java
+/home/zup/Projects/Java/spgproj/src/main/java/com/example/dev/qa/spgproj/config/SwaggerConfiguration.java
+/home/zup/Projects/Java/spgproj/src/main/java/com/example/dev/qa/spgproj/SpgprojApplication.java
+/home/zup/Projects/Java/spgproj/src/main/java/com/example/dev/qa/spgproj/security/JWTLoginFilter.java
